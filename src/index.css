@@ -10,6 +10,14 @@ h1 , p{
 }
 
 
-.lyrics-box{
+.lyrics-box, .lyrics-box{
     background-color: #ff7f51;
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+}
+
+textarea:focus, input:focus, input{
+    outline: none;
+    border: none;
 }
