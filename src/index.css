@@ -2,22 +2,42 @@
     margin: 0;
     padding: 0;
     background-color: black;
+    height: 100%;
 }
-
 
 h1 , p{
     color: white;
 }
 
 
-.lyrics-box, .lyrics-box{
-    background-color: #ff7f51;
-    width: 200px;
-    height: 20px;
-    border-radius: 2px;
-}
-
 textarea:focus, input:focus, input{
     outline: none;
     border: none;
 }
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 1fr 1fr; /* Two rows, each taking 50% of the available height */
+    grid-template-columns: 1fr 1fr; /* Two columns, each taking 50% of the available width */
+    height: 100%; /* Make the container take the full height of the screen */
+    place-items: center;
+    
+  }
+  
+  .item1, .item2, .item3 {
+    padding: 20px;
+    text-align: center;
+    width: 200px;
+    height: 20px;
+    border-radius: 2px;
+    
+  }
+  
+  .item1, .item2 {
+    background-color: #ff7f51;
+  }
+  
+  .item3 {
+    background-color: #ff7f51;
+    grid-column: span 2; /* Make the third div span across 2 columns */
+  }
